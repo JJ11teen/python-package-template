@@ -7,7 +7,7 @@
 * MIT licence
 * VS Code development container definitions
 * Configures black & isort to run on save in vscode
-* Includes a github action which run tests on PRs against main branch
+* Includes a github action which runs tests on PRs against main branch
 * Includes tests template
 
 ### Checklist
