@@ -13,14 +13,15 @@
 ### Checklist
 
 1. Add project details to `setup.cfg`
-1. Rename the `src/package_name` directory to actually include your package name
+1. Update line 3 of `src/package_name/__init__.py` to include your package name
+1. Rename the `src/package_name` directory to `src/<your actual package name>`
 1. Change licence if you don't want the MIT licence
 1. [_Optional_] If you want your minimum supported python version to differ from 3.10:
     
     1. Update your package definition: Line 22 of `setup.cfg`
     1. Configure black to lint properly: Line 10 of `pyproject.toml`
-    1. Uncomment tests workflow to test relevent versions: Line 13 `.github/workflows/tests.yaml`
-    1. Update devcontainer image to use new version: Line 5 `.devcontainer/Dockerfile`
+    1. Uncomment tests workflow to test relevent versions: Line 13 of `.github/workflows/tests.yaml`
+    1. Update devcontainer image to use new version: Line 5 of `.devcontainer/Dockerfile`
 
 1. Build your dev container & reopen your IDE 
 1. Install your package in editable mode & start working: `pip install -e .[tests]`
