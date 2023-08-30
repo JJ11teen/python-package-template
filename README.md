@@ -17,7 +17,7 @@
 1. Update line 3 of `src/package_name/__init__.py` to include your package name
 1. Rename the `src/package_name` directory to `src/<your actual package name>`
 1. Change the LICENSE if you want to. https://choosealicense.com/
-1. [_Optional_] If you want your minimum supported python version to differ from 3.10:
+1. [_Optional_] If you want your minimum supported python version to differ from 3.11:
     
     1. Update your package definition: Line 22 of `setup.cfg`
     1. Configure black to lint properly: Line 10 of `pyproject.toml`

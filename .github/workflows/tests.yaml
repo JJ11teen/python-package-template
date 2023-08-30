@@ -6,7 +6,6 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    environment: lucas_env
     strategy:
       matrix:
        include:
@@ -17,8 +16,10 @@ jobs:
         #   python-version-str: "py38"
         # - python-version: "3.9"
         #   python-version-str: "py39"
-        - python-version: "3.10"
-          python-version-str: "py310"
+        # - python-version: "3.10"
+        #   python-version-str: "py310"
+        - python-version: "3.11"
+          python-version-str: "py311"
     steps:
       - uses: actions/checkout@v2
       - name: Set up ${{ matrix.python-version-str }}
